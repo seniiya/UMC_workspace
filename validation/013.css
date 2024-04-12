@@ -1,0 +1,120 @@
+
+.error {
+    color: red;
+    font-size: 10px;
+    margin-left: 40px; /*오류 메세지 위치 조정*/
+    margin-top: 5px; /*오류 메세지 위치 조정*/
+}
+
+.success-message {
+     color: green;
+     font-size: 10px;
+     margin-left: 40px;
+     margin-top: 5px;
+}
+
+/* 중앙정렬? */
+body, html {
+    height: 80%;
+    width: 80%;
+    background-color: rgb(161, 223, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.login {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* padding: 20px; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* 약간 투명한 흰색 배경 */
+    
+}
+
+
+
+/* login 클래스 내부 내용 좌측 정렬 */ 
+.login label {
+    text-align: left;
+    margin-left: 90px;
+    align-items: center; /* 수직 가운데 정렬 */
+    display: block;
+   margin-bottom: 5px;
+}
+
+/*테두리 하얀색*/
+.login input {
+ 
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    /* border: none; */
+    border: 1px solid white;
+    margin: 5px;
+    width: 70%;
+    text-align: center;
+    margin:0 auto;
+}
+/*모달 스타일*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+   
+}
+
+
+/*버튼 아래로 */
+/* .botton {
+    justify-content: ;
+} */
+.modal-content p.larger {
+    font-size: 1.5em; /*첫 번째 문장의 크기 설정*/
+    font-weight: bolder;
+}
+
+.modal-content p.smaller {
+    font-size: 1em; /*두 번쨰 문장의 크기 설정 */
+}
+
+/* 가입 버튼 아래로 이동 */
+.login_button {
+    margin-top: 10px;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    background-color: #aeaeb4;
+    border: none;
+    margin:0 auto;
+}
+
+.login label,
+.login input,
+.login button {
+    display: block; /* 블록 요소로 설정하여 세로 배치 */
+    margin-bottom: 5px; /* 아래쪽 여백 설정 */
+  
+}

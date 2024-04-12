@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"> <!--lang을 왜 붙여 .?-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>로그인</title>
+        <link rel="stylesheet" href="./013.css"/>
+        <script src="./013.js"></script>
+    </head>
+    
+    <body>
+        <div class="login">
+            <h1 class="login-title">회원가입</h1>
+
+            <label for="username">이름</label>
+            <input type="username" name="username" id="username"> <!--id="username" 추가해줌 다른 부분들도-->
+            <span class="error" id="usernameError"></span> 
+
+            <label for="email">이메일</label>
+            <input type="emailBox" name="email" id="email">
+            <span class="error" id="emailError"></span>
+
+            <label for="age">나이</label>
+            <input type="ageBox" name="age" id="age">
+            <span class="error" id="ageError"></span>
+
+            <label for="password">비밀번호</label>
+            <input type="password" name="password" id="password">
+            <span class="error" id="passwordError"></span>
+
+            <label for="password">비밀번호 확인</label>  <!--왜 위랑 똑같이 라벨 만들어도 되는거지 ; css 똑같이 사용해서 같은 걸로 적용-->
+            <input type="password" name="passwordcheck" id="passwordcheck">
+            <span class="error" id="passwordcheckError"></span>
+
+            <button class="login_button" type="button">가입하기</button>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="larger">가입 성공!</p>
+                <p class="smaller">UMC 챌린저 가입을 축하합니다!!</p>
+            </div>
+        </div>
+        <!-- <script src="./013.js"></script> 그냥 한번 넣어봄 -->
+    </body>
+</html>
