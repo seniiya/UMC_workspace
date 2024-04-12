@@ -6,14 +6,6 @@ console.log(number.innerText);
 console.log(increase);
 console.log(decrease.id);
 
-// increase.onclick = () => {
-//     console.log("increase가 클릭됨");
-// };
-
-// decrease.onclick = () => {
-//     console.log("decrease가 클릭됨");
-
-// }
 
 increase.onclick = () => {
     console.log("increase가 클릭됨");
