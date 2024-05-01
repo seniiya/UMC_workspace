@@ -1,0 +1,45 @@
+
+/* 
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.modalopen-btn, .modalclose-btn {
+  cursor: pointer;
+  margin-left: auto;
+} */
+
+.modal-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #ffff;
+  width: 80%;
+  max-width: 450px;
+  height: 130px;
+  padding: 20px;
+  border-radius: 5px;
+}
+/* 모달창 뜨는 거 자체를 꾸며주기  */
+
+.modalclose-btn {
+  position: absolute;
+  /* top: 10px; */
+  right: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
