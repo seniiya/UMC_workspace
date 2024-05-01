@@ -86,10 +86,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
         // 입력하지 않았을 시 제출하기 폼 버튼 비활성화 
         if (errorMessages.length > 0) {
-            // document.querySelector('.login_button').disabled = true;
+           
             document.querySelector('login_button').setAttribute('type', 'button');
         } else {
-            // document.querySelector('.login_button').disabled = false;
+          
             document.querySelector('.login_button').setAttribute('type', 'submit');
         }
         // 모든 유효성 검사 통과 여부를 확인하고 모달을 표시합니다.
