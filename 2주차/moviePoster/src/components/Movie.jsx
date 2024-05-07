@@ -28,25 +28,3 @@ export default function Movie({title, poster_path, overview, vote_average }) {
 
 
 
-
-
-
-
-
-// const Movie = ({title, poster_path, overview, vote_average}) => (
-//     <div className='movie-container'>
-//         <img src={IMG_BASE_URL + poster_path} alt="영화포스터" />
-//             <div className='movie-info'>
-//                 <h4>{title}</h4>
-//                 <span>{vote_average}</span>
-//             </div>
-
-//         <div className='movie-script'>
-//             {/* 영화소개  */}
-//             <p>{title}</p>
-//             <p>{overview}</p>
-//         </div>
-//     </div>
-// );
-
-// export default Movie;
