@@ -1,0 +1,83 @@
+body {
+    background-color: #22254b;
+}
+
+.app-container {
+    display: flex;  /* 영화 한 줄로 나열됨 */
+    flex-wrap: wrap; /*길이가 화면보다 길 때 다음 줄로 내려줌*/
+    justify-content: center;
+}
+
+.movie-container {
+    width: 250px;
+    margin: 16px;
+    background-color: #373b69;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    /*추가*/
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-container img {
+    max-width: 100%;
+}
+
+.movie-info {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-info h4{
+    margin: 0;
+}
+
+.movie-info span{
+    margin-left: 3px;
+}
+
+.movie-container:hover .movie-info {
+    opacity: 1;
+}
+
+
+
+/* https://github.com/letmejace/ReactMoviesApp/tree/master/src */
+.movie-script {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+    color: #22254b;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    max-height: 100%;
+    transform: translateY(102%);
+    /* transition: transform 0.3s ease-in-out; */
+  }
+
+.movie-container:hover .movie-script {
+    transform: translateY(-300%);
+    position: absolute;
+    min-height: 95%;
+    color: white;
+    opacity: 1;
+    border-radius: 5px;
+}
+/* 창의 크기 키워주고 배경 색이랑  */
+
+.movie-script p{
+    font-size: 13px;
+
+}
+
+
+
+
